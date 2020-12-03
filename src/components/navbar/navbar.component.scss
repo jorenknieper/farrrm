@@ -32,7 +32,7 @@ nav {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar-dark .nav-link {
+.nav-link {
     color:#ffffff;
     text-decoration: none;
     font-family: din-2014;
@@ -40,8 +40,17 @@ nav {
     font-size: 2em;
     white-space: nowrap;
     text-transform: uppercase;
+    -webkit-transition:all 0.1s ease-out;
+    -moz-transition:all 0.1s ease-out;
+    -ms-transition:all 0.1s ease-out;
+    -o-transition:all 0.1s ease-out;
+    transition:all 0.1s ease-out;
 }
 
-.navbar-dark .nav-link:hover {
+.nav-link:hover {
+    color: #000000;
+}
+
+.active {
     color: #000000;
 }
