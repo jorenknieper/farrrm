@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,20 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  isCollapsed: Boolean;
-  navItems = [];
+  screenWidth: any;
+  isCollapsed: boolean;
+  navItems: any[] = [];
 
   ngOnInit(): void {
-    this.isCollapsed = true
+    this.screenWidth = window.innerWidth;
+    this.isCollapsed = true;
     this.navItems = [
-      { title: 'Over ons', isActive: false, routerLink: 'about' },
-      { title: 'Realisaties', isActive: false, routerLink: 'realisaties' },
-      { title: 'Studio', isActive: false, routerLink: 'studio' },
-      { title: 'Contact', isActive: false, routerLink: 'contact' }
+      { title: 'Over ons', routerLink: 'about' },
+      { title: 'Realisaties', routerLink: 'realisaties' },
+      { title: 'Studio', routerLink: 'studio' },
+      { title: 'Contact', routerLink: 'contact' }
     ];
   }
 
   toggleCollapsed(): void {
     this.isCollapsed = !this.isCollapsed;
+  }
+
+  isMobile(): boolean {
+    return this.screenWidth < 992;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(): void {
+    this.screenWidth = window.innerWidth;
   }
 }

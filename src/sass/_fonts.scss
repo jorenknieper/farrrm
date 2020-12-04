@@ -1,0 +1,77 @@
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-ExtraLight.ttf") format("truetype");
+    font-weight: $fw-el;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-ExtraLightItalic.ttf") format("truetype");
+    font-weight: $fw-el;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-Light.ttf") format("truetype");
+    font-weight: $fw-l;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-LightItalic.ttf") format("truetype");
+    font-weight: $fw-l;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-Regular.ttf") format("truetype");
+    font-weight: $fw-r;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-Italic.ttf") format("truetype");
+    font-weight: $fw-r;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-DemiBold.ttf") format("truetype");
+    font-weight: $fw-db;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-DemiBoldItalic.ttf") format("truetype");
+    font-weight: $fw-db;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-Bold.ttf") format("truetype");
+    font-weight: $fw-b;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-BoldItalic.ttf") format("truetype");
+    font-weight: $fw-b;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-ExtraBold.ttf") format("truetype");
+    font-weight: $fw-eb;
+}
+
+@font-face {
+    font-family: $font;
+    src: url("../assets/fonts/DIN2014-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: $fw-eb;
+    font-style: italic;
+}

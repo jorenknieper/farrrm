@@ -1,0 +1,80 @@
+@import './variables';
+@import './fonts';
+@import './animations';
+
+html {
+    background: $black;
+    body {
+        font-family: $font !important;
+        font-weight: $fw-r;
+        background: url("../assets/images/body_bg.png") no-repeat fixed center;
+        h1 {
+            color: $white;
+            font-weight: $fw-b;
+            font-size: 4vw !important;
+            text-align: left;
+        }
+        h2 {
+            color: $white;
+            font-weight: $fw-b;
+            font-size: 4vw !important;
+            text-align: left;
+        }
+        p {
+            color: $ultralight;
+            font-weight: $fw-r;
+            font-size: 1.75vw !important;
+            text-align: left;
+        }
+    }
+}
+
+iframe {
+    width: 75vw;
+    height: 75vh;
+    display: block;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-block {
+    width: 50vw;
+    margin: $margin-center;
+}
+
+#latest-video {
+    margin-top: 7.5%;
+}
+
+@media only screen and (max-width: $max-width-lg) {
+    html {
+        body {
+            h1 {
+                font-size: 4.5vh !important;
+                text-align: center;
+            }
+            h2 {
+                font-size: 3.5vh !important;
+                text-align: center;
+            }
+            p {
+                font-size: 2.25vh !important;
+                text-align: center;
+            }
+        }
+    }
+
+    iframe {
+        width: 100vw;
+        height: 37.5vh;
+    }
+
+    .text-block {
+        width: 75vw;
+    }
+}
