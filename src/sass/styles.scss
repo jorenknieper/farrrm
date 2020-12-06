@@ -1,6 +1,6 @@
-@import './variables';
-@import './fonts';
-@import './animations';
+@import "./variables";
+@import "./fonts";
+@import "./animations";
 
 html {
     background: $black;
@@ -81,7 +81,22 @@ img {
 @media only screen and (max-width: 640px) {
     html {
         body {
-            background: url("../assets/images/Background_paper_HAMERS_640.jpg") no-repeat fixed center;
+            background: none;
+        }
+        body:before {
+            content: “”;
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url("../assets/images/Background_paper_HAMERS_640.jpg") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
     }
 }
@@ -89,7 +104,22 @@ img {
 @media only screen and (max-width: 1280px) {
     html {
         body {
-            background: url("../assets/images/Background_paper_HAMERS_1280.jpg") no-repeat fixed center;
+            background: none;
+        }
+        body:before {
+            content: “”;
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url("../assets/images/Background_paper_HAMERS_1280.jpg") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
     }
 }
