@@ -3,8 +3,7 @@ $white: #ffffff;
 $ultralight: #e5e5e5;
 $black: #000000;
 
-// Fonts
-$font: "din-2014";
+// Font Weights
 $fw-eb: 800;
 $fw-b: 700;
 $fw-db: 600;
@@ -12,7 +11,39 @@ $fw-r: 400;
 $fw-l: 300;
 $fw-el: 200;
 
+// Base Font
+$base-font-family: "din-2014";
+$base-font-size: 1.5em;
+$base-font-weight: $fw-r;
+
 // Alignment
 $margin-center: 0 auto;
 $max-width-lg: 991px;
 $min-width-xl: 992px;
+
+// Font-Size
+
+// Line-Height
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
+// Breakpoints
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+$bp-640-w: 640px;
+$bp-1280-w: 1280px;
+$bp-2560-w: 2560px;
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$mq-640-w: "(max-width: #{$bp-640-w})";
+$mq-1280-w: "(max-width: #{$bp-1280-w})";
+$mq-2560-w: "(max-width: #{$bp-2560-w})";

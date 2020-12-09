@@ -1,15 +1,41 @@
-@import '~src/sass/variables';
+@import "~src/sass/variables";
 
-#navbar-bg-desktop {
-    min-height: 200px;
-    object-fit: cover;
+#nav-container {
+    height: 20vh;
+    width: 100vw;
+    background: url("../../assets/images/navbar_bg.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 
-.navbar-brand {
-    padding-right: 2.5%;
-    img {
-        height: 75px;
+.navbar-brand > img {
+    height: 7.5vh;
+}
+
+li {
+    padding: 0 2.5% 0;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    font-family: din-2014;
+    font-weight: 700;
+    font-size: 2em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    &:hover {
+        color: $black;
     }
+}
+
+.active {
+    color: $black;
 }
 
 .navbar-toggler {
@@ -20,54 +46,58 @@
     }
 }
 
-.navbar-nav {
-    li {
-        padding: 0 2.5% 0;
-    }
-    .nav-link {
-        color:$white;
-        text-decoration: none;
-        font-family: din-2014;
-        font-weight: 700;
-        font-size: 2em;
-        white-space: nowrap;
-        text-transform: uppercase;
-        -webkit-transition:all 0.1s ease-out;
-        -moz-transition:all 0.1s ease-out;
-        -ms-transition:all 0.1s ease-out;
-        -o-transition:all 0.1s ease-out;
-        transition:all 0.1s ease-out;
-        &:hover {
-            color: $black;
-        }
-    }
-}
-
-.active {
-    color: $black;
-}
-
-// override grow:hover for navbar logo //
 .grow:hover {
-    -webkit-transform:scale(1.1);
-    -moz-transform:scale(1.1);
-    -ms-transform:scale(1.1);
-    -o-transform:scale(1.1);
-    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-@media only screen and (min-width: $min-width-xl) {
-    nav {
-        padding: 2.5% 0 12.5%;
+.navbar-collapse {
+    border-top: solid 2px $white !important;
+    background: url("../../assets/images/navbar_bg_mobile.png") !important;
+    margin: -0.5rem -2.75rem !important;
+    padding: 0.5rem 2.75rem !important;
+
+    @media #{$mq-medium} {
+        border-top: none !important;
+        background: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
-@media only screen and (max-width: $max-width-lg) {
-    nav {
-        background: url("../../assets/images/navbar_bg_mobile.png");
-        border-bottom: 2px solid $white;
-        .navbar-brand {
-            margin: $margin-center;
-        }
+@media #{$mq-medium} {
+    .navbar-expand-custom {
+        -ms-flex-flow: row nowrap !important;
+        flex-flow: row nowrap !important;
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+    }
+    .navbar-expand-custom .navbar-nav {
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+    .navbar-expand-custom .navbar-nav .dropdown-menu {
+        position: absolute !important;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+    .navbar-expand-custom > .container,
+    .navbar-expand-custom > .container-fluid {
+        -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto !important;
+        flex-basis: auto !important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none !important;
     }
 }

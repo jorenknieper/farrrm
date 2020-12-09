@@ -5,34 +5,103 @@
 html {
     background: $black;
     body {
-        font-family: $font !important;
-        font-weight: $fw-r;
+        color: $white;
+        font-family: $base-font-family;
+        font-weight: $base-font-weight;
+        line-height: $base-line-height;
         background: url("../assets/images/Background_paper_HAMERS_4k.jpg") no-repeat fixed center;
-        h1 {
-            color: $white;
-            font-weight: $fw-b;
-            font-size: 4vw !important;
-            text-align: left;
+
+        @media #{$mq-640-w} {
+            background: url("../assets/images/Background_paper_HAMERS_640.jpg") no-repeat fixed center;
         }
-        h2 {
-            color: $white;
-            font-weight: $fw-b;
-            font-size: 4vw !important;
-            text-align: left;
+
+        @media #{$mq-1280-w} {
+            background: url("../assets/images/Background_paper_HAMERS_1280.jpg") no-repeat fixed center;
         }
+
+        @media #{$mq-2560-w} {
+            background: url("../assets/images/Background_paper_HAMERS_2560.jpg") no-repeat fixed center;
+        }
+
         p {
-            color: $ultralight;
-            font-weight: $fw-r;
-            font-size: 1.75vw !important;
-            text-align: left;
+            font-size: $base-font-size;
+            text-align: center;
+
+            @media #{$mq-medium} {
+                font-size: $base-font-size * 1.2;
+                text-align: left;
+            }
+
+            @media #{$mq-large} {
+                font-size: $base-font-size * 1.3;
+            }
+
+            @media #{$mq-xlarge} {
+                font-size: $base-font-size * 1.4;
+            }
+
+            @media #{$mq-xxlarge} {
+                font-size: $base-font-size * 1.6;
+            }
         }
+
+        h1,
+        h2 {
+            font-size: $base-font-size * 2.8;
+            font-weight: $fw-b;
+            text-align: center;
+
+            @media #{$mq-medium} {
+                font-size: $base-font-size * 3;
+                text-align: left;
+            }
+
+            @media #{$mq-large} {
+                font-size: $base-font-size * 3.1;
+            }
+
+            @media #{$mq-xlarge} {
+                font-size: $base-font-size * 3.2;
+            }
+
+            @media #{$mq-xxlarge} {
+                font-size: $base-font-size * 3.4;
+            }
+        }
+
+        h3 {
+            font-size: $base-font-size * 1.5;
+            font-weight: $fw-b;
+            text-align: center;
+
+            @media #{$mq-medium} {
+                font-size: $base-font-size * 1.7;
+                text-align: left;
+            }
+
+            @media #{$mq-large} {
+                font-size: $base-font-size * 1.8;
+            }
+
+            @media #{$mq-xlarge} {
+                font-size: $base-font-size * 1.9;
+            }
+
+            @media #{$mq-xxlarge} {
+                font-size: $base-font-size * 2.1;
+            }        }
     }
 }
 
 iframe {
-    width: 75vw;
-    height: 75vh;
+    width: 100vw;
+    height: 37.5vh;
     display: block;
+
+    @media #{$mq-medium} {
+        width: 75vw;
+        height: 75vh;
+    }
 }
 
 img {
@@ -40,94 +109,20 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
+}   
 
 .content-width {
-    width: 50vw;
+    width: 100vw;
+
+    @media #{$mq-medium} {
+        width: 75vw;
+    }
+
+    @media #{$mq-large} {
+        width: 50vw;
+    }
 }
 
 .content-margin {
     margin-top: 7.5%;
-}
-
-@media only screen and (max-width: $max-width-lg) {
-    html {
-        body {
-            h1 {
-                font-size: 4.5vh !important;
-                text-align: center;
-            }
-            h2 {
-                font-size: 3.5vh !important;
-                text-align: center;
-            }
-            p {
-                font-size: 2.25vh !important;
-                text-align: center;
-            }
-        }
-    }
-
-    iframe {
-        width: 100vw;
-        height: 37.5vh;
-    }
-
-    .content-width {
-        width: 75vw;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    html {
-        body {
-            background: none;
-        }
-        body:before {
-            content: “”;
-            display: block;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -10;
-            background: url("../assets/images/Background_paper_HAMERS_640.jpg") no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-    }
-}
-
-@media only screen and (max-width: 1280px) {
-    html {
-        body {
-            background: none;
-        }
-        body:before {
-            content: “”;
-            display: block;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -10;
-            background: url("../assets/images/Background_paper_HAMERS_1280.jpg") no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-    }
-}
-
-@media only screen and (max-width: 2560px) {
-    html {
-        body {
-            background: url("../assets/images/Background_paper_HAMERS_2560.jpg") no-repeat fixed center;
-        }
-    }
 }
