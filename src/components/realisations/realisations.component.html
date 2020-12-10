@@ -1,1 +1,33 @@
-<h1 class="text-center m-5 p-5">REALISATIES W.I.P</h1>
+<div class="mt-5 mb-5">
+    <div class="content-width mx-auto margin-bottom-between">
+        <h1>REALISATIES</h1>
+        <p>Tectatio berferspit desciis verum reri ommos ex eum quas vel ius eaquas aciti aut qui odis accum ad quia
+            quam
+            excea cum haribus quatium quod</p>
+    </div>
+    <div class="row content-width mx-auto margin-bottom-between">
+        <div class="col-md-6 col-sm-12">
+            <h2>SPOTIFY RELEASES</h2>
+            <p>Tectatio berferspit desciis verum reri ommos ex eum quas vel ius eaquas aciti aut qui odis accum ad
+                quia quam
+                excea cum haribus quatium quod</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" frameborder="0"
+                allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+    <div class="content-width mx-auto">
+        <h2 style="line-height: 0.5;">YOUTUBE</h2>
+        <h2>VIDEOS</h2>
+        <div class="row video-container mb-5" *ngFor="let video of videos">
+            <div class="col-md-6 col-sm-12">
+                <h3>{{ video.title }}</h3>
+                <p>{{ video.description }}</p>
+            </div>
+            <iframe class="col-md-6 col-sm-12" [src]="video.url" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen [ngClass]="{'order-md-first': video.left == true}"></iframe>
+        </div>
+    </div>
+</div>

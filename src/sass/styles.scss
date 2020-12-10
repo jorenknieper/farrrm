@@ -93,23 +93,12 @@ html {
     }
 }
 
-iframe {
-    width: 100vw;
-    height: 37.5vh;
-    display: block;
-
-    @media #{$mq-medium} {
-        width: 75vw;
-        height: 75vh;
-    }
-}
-
 img {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}   
+}
 
 .content-width {
     width: 90vw;

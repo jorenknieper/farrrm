@@ -1,8 +1,60 @@
 @import '~src/sass/variables';
 
 footer {
-    background: url("../../assets/images/footer_bg.png") no-repeat;
-    min-height: 70vh;
+    height: auto;
+    background: url("../../assets/images/footer_bg.png") no-repeat top;
+    background-size: cover;
+    padding-top: 15vh;
+}
+
+h2 {
+    font-weight: $fw-eb;
+}
+
+p {
+    line-height: 0.8;
+}
+
+#logo-container {
+    padding-bottom: 2.5%;
+
+    #logo-center {
+        margin: 0 auto;
+        width: 75vw;
+    }
+
+    img {
+        max-height: 10vh;
+        max-width: 33.33%;
+        padding: 0 0 0 7.5vw;
+    }
+}
+
+#social-container {
+    width: 100%;
+
+    img {
+        max-height: 10vh;
+        max-width: 10vh;
+    }
+}
+
+#btn-contact {
+    color: $white;
+    background-color: transparent;
+    border: solid 4px $white;
+    font-size: 3vw;
+    -webkit-transition:all 0.25s ease-out;
+    -moz-transition:all 0.25s ease-out;
+    -ms-transition:all 0.25s ease-out;
+    -o-transition:all 0.25s ease-out;
+    transition:all 0.25s ease-out;
+    font-weight: 800;
+}
+
+#btn-contact:hover {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 // h2 {
@@ -26,24 +78,6 @@ footer {
 //     max-height: 50vh;
 //     object-fit: cover;
 //     object-position: 50% 0%;
-// }
-
-// #btn-contact {
-//     color: $white;
-//     background-color: transparent;
-//     border: solid 4px $white;
-//     font-size: 3vw;
-//     -webkit-transition:all 0.25s ease-out;
-//     -moz-transition:all 0.25s ease-out;
-//     -ms-transition:all 0.25s ease-out;
-//     -o-transition:all 0.25s ease-out;
-//     transition:all 0.25s ease-out;
-//     font-weight: 800;
-// }
-
-// #btn-contact:hover {
-//     color: #000000;
-//     background-color: #ffffff;
 // }
 
 // #wrapper-container {

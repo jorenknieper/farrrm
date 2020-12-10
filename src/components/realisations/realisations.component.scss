@@ -1,0 +1,51 @@
+@import "~src/sass/variables";
+
+iframe {
+    width: 100%;
+    height: 37.5vh;
+    display: block;
+
+    @media #{$mq-medium} {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.margin-bottom-between {
+    margin-bottom: 10vh;
+}
+
+.video-container {
+    iframe {
+        width: 100%;
+        height: 30vh;
+        display: block;
+
+        @media #{$mq-medium} {
+            height: auto;
+        }
+    }
+
+    p {
+        font-size: $base-font-size * 0.6;
+        text-align: center;
+    
+        @media #{$mq-medium} {
+            font-size: $base-font-size * 0.8;
+            text-align: left;
+        }
+    
+        @media #{$mq-large} {
+            font-size: $base-font-size * 0.9;
+        }
+    
+        @media #{$mq-xlarge} {
+            font-size: $base-font-size * 1.0;
+        }
+    
+        @media #{$mq-xxlarge} {
+            font-size: $base-font-size * 1.2;
+        }
+    }
+
+}

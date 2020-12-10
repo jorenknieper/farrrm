@@ -1,0 +1,12 @@
+@import "~src/sass/variables";
+
+iframe {
+    width: 100vw;
+    height: 37.5vh;
+    display: block;
+
+    @media #{$mq-medium} {
+        width: 75vw;
+        height: 75vh;
+    }
+}

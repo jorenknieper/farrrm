@@ -13,7 +13,11 @@
 }
 
 li {
-    padding: 0 2.5% 0;
+    padding: 0 1% 0;
+
+    @media #{$mq-large} {
+        padding: 0 2.5% 0;
+    }
 }
 
 a {
@@ -57,10 +61,10 @@ a {
 .navbar-collapse {
     border-top: solid 2px $white !important;
     background: url("../../assets/images/navbar_bg_mobile.png") !important;
-    margin: -0.5rem -2.75rem !important;
-    padding: 0.5rem 2.75rem !important;
+    margin-right: -31px !important;
+    margin-left: -31px !important;
 
-    @media #{$mq-medium} {
+    @media #{$mq-bootstrap-lg} {
         border-top: none !important;
         background: none !important;
         margin: 0 !important;
