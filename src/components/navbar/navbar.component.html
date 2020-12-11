@@ -1,18 +1,20 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="container-lg">
-        <a class="navbar-brand" routerLink="">
-            <img class="grow" src="assets/images/farrm_logo.png" draggable="false" />
-        </a>
-        <button class="navbar-toggler" type="button" (click)="toggleCollapsed()">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" [collapse]="isCollapsed">
-            <ul class="navbar-nav navbar-center">
-                <li class="nav-item" *ngFor="let navItem of navItems">
-                    <a class="nav-link" routerLink="{{ navItem.routerLink }}"
-                        routerLinkActive="active">{{ navItem.title }}</a>
-                </li>
-            </ul>
+<div id="nav-wrapper">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-lg">
+            <a class="navbar-brand" routerLink="">
+                <img class="grow" src="assets/images/farrm_logo.png" draggable="false" />
+            </a>
+            <button class="navbar-toggler" type="button" (click)="toggleCollapsed()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" [collapse]="isCollapsed">
+                <ul class="navbar-nav navbar-center">
+                    <li class="nav-item" *ngFor="let navItem of navItems">
+                        <a class="nav-link" routerLink="{{ navItem.routerLink }}"
+                            routerLinkActive="active" (click)="isCollapsed = !isCollapsed">{{ navItem.title }}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>

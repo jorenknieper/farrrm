@@ -1,24 +1,32 @@
 @import "~src/sass/variables";
 
-nav {
+#nav-wrapper {
     background: url("../../assets/images/navbar_bg.png") no-repeat;
     background-position: bottom;
     background-size: cover;
-    padding-bottom: 7.5%;
+    height: 150px;
+    padding: 0;
+
+    @media #{$mq-bootstrap-lg} {
+        height: auto;
+        padding-bottom: 7.5%;
+    }
 }
 
 .navbar-brand > img {
     height: 7.5vh;
 
     @media #{$mq-medium} {
-        height: 3.5vw;
+        height: 4vw;
     }
 }
 
 li {
-    padding: 0 1% 0;
+    padding: 0 0.5% 0;
+    font-size: 0.9em;
 
     @media #{$mq-large} {
+        font-size: 1em;
         padding: 0 2.5% 0;
     }
 }
@@ -66,6 +74,7 @@ a {
     background: url("../../assets/images/navbar_bg_mobile.png") !important;
     margin-right: -16px !important;
     margin-left: -16px !important;
+    z-index: 99;
 
     @media #{$mq-bootstrap-lg} {
         border-top: none !important;

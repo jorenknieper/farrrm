@@ -24,7 +24,7 @@ html {
         }
 
         p {
-            font-size: $base-font-size;
+            font-size: $base-font-size * 0.8;
             text-align: center;
 
             @media #{$mq-medium} {
@@ -47,7 +47,7 @@ html {
 
         h1,
         h2 {
-            font-size: $base-font-size * 2.8;
+            font-size: $base-font-size * 1.5;
             font-weight: $fw-b;
             text-align: center;
 
@@ -70,7 +70,7 @@ html {
         }
 
         h3 {
-            font-size: $base-font-size * 1.5;
+            font-size: $base-font-size * 1;
             font-weight: $fw-b;
             text-align: center;
 
@@ -89,7 +89,31 @@ html {
 
             @media #{$mq-xxlarge} {
                 font-size: $base-font-size * 2.1;
-            }        }
+            }
+        }
+
+        h4 {
+            font-size: $base-font-size * 0.7;
+            font-weight: $fw-b;
+            text-align: center;
+
+            @media #{$mq-medium} {
+                font-size: $base-font-size * 1.4;
+                text-align: left;
+            }
+
+            @media #{$mq-large} {
+                font-size: $base-font-size * 1.5;
+            }
+
+            @media #{$mq-xlarge} {
+                font-size: $base-font-size * 1.6;
+            }
+
+            @media #{$mq-xxlarge} {
+                font-size: $base-font-size * 1.8;
+            }
+        }
     }
 }
 

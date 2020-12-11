@@ -5,20 +5,22 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from '../home/home.component';
-import { AboutComponent } from '../about/about.component';
-import { RealisationsComponent } from '../realisations/realisations.component';
-import { StudioComponent } from '../studio/studio.component';
-import { ContactComponent } from '../contact/contact.component';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
+import { HomeComponent } from 'src/components/home/home.component';
+import { AboutComponent } from 'src/components/about/about.component';
+import { RealisationsComponent } from 'src/components/realisations/realisations.component';
+import { StudioComponent } from 'src/components/studio/studio.component';
+import { ContactComponent } from 'src/components/contact/contact.component';
+import { AgendaComponent } from 'src/components/agenda/agenda.component';
+import { NavbarComponent } from 'src/components/navbar/navbar.component';
+import { FooterComponent } from 'src/components/footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'realisaties', component: RealisationsComponent },
   { path: 'studio', component: StudioComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'agenda', component: AgendaComponent }
 ];
 
 @NgModule({
@@ -30,7 +32,8 @@ const routes: Routes = [
     AboutComponent,
     RealisationsComponent,
     StudioComponent,
-    ContactComponent
+    ContactComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,

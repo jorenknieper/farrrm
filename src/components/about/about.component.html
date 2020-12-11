@@ -6,9 +6,9 @@
     </div>
     <div id="team-container" class="content-margin">
         <h2>TEAM</h2>
-        <div class="row mt-5" *ngFor="let member of members">
+        <div class="row mt-lg-5 mt-sm-2" *ngFor="let member of members">
             <div class="col-md-7 col-sm-12">
-                <h3>{{ member.name }}</h3>
+                <h3 class="mt-5 mt-md-0">{{ member.name }}</h3>
                 <p>{{ member.description }}</p>
             </div>
             <div class="col-md-5 col-sm-12" [ngClass]="{'order-md-first': member.left == true}">

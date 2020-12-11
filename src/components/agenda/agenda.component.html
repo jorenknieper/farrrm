@@ -1,0 +1,16 @@
+<div class="mt-5 mb-5">
+    <div class="content-width mx-auto">
+        <h1 class="mb-5">AGENDA</h1>
+        <div class="mb-5" *ngFor="let item of items">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 mb-3 mb-lg-0 agenda-image-wrapper" style="background: url('{{item.imageUri}}'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+                <div class="col-lg-9 col-sm-12 agenda-text-wrapper">
+                    <h3>{{ item.title }}</h3>
+                    <h4>{{ item.date }} // {{ item.price }}</h4>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>    
+            <hr/>
+        </div>
+    </div>
+</div>

@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit {
       { title: 'Over ons', routerLink: 'about' },
       { title: 'Realisaties', routerLink: 'realisaties' },
       { title: 'Studio', routerLink: 'studio' },
+      { title: 'Agenda', routerLink: 'agenda' },
       { title: 'Contact', routerLink: 'contact' }
     ];
   }

@@ -1,0 +1,101 @@
+@import "~src/sass/variables";
+
+#contact-info-wrapper {
+    p {
+        font-size: $base-font-size * 0.8;
+        line-height: 0.5;
+        text-align: center;
+
+        @media #{$mq-medium} {
+            font-size: $base-font-size * 0.8;
+            text-align: left;
+        }
+
+        @media #{$mq-large} {
+            font-size: $base-font-size * 0.9;
+        }
+
+        @media #{$mq-xlarge} {
+            font-size: $base-font-size * 1;
+        }
+
+        @media #{$mq-xxlarge} {
+            font-size: $base-font-size * 1.2;
+        }
+    }
+}
+
+.big-margin {
+    margin-bottom: 15vh;
+}
+
+form {
+    input,
+    label,
+    textarea {
+        font-size: $base-font-size * 1;
+        text-align: left;
+        font-weight: $fw-r;
+
+        @media #{$mq-medium} {
+            font-size: $base-font-size * 1.7;
+            text-align: left;
+        }
+
+        @media #{$mq-large} {
+            font-size: $base-font-size * 1.8;
+        }
+
+        @media #{$mq-xlarge} {
+            font-size: $base-font-size * 1.9;
+        }
+
+        @media #{$mq-xxlarge} {
+            font-size: $base-font-size * 2.1;
+        }
+    }
+
+    label {
+        padding: 0;
+        vertical-align: top;
+        font-weight: $fw-b;
+    }
+
+    input {
+        padding: 0;
+        height: 5vh;
+    }
+
+    textarea {
+        padding: 0;
+        height: 20vh;
+    }
+
+    button[type="submit"] {
+        color: $white;
+        background-color: transparent;
+        border: solid 4px $white;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        -ms-transition: all 0.25s ease-out;
+        -o-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+        font-weight: 800;
+        padding: 0.5em;
+        width: 100%;
+        margin: 0 auto;
+
+        &:hover {
+            color: #000000;
+            background-color: #ffffff;        
+        }
+
+        @media #{$mq-medium} {
+            font-size: 2em;
+        }
+
+        @media #{$mq-bootstrap-lg} {
+            width: 75%;
+        }
+    }
+}

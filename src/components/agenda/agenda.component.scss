@@ -1,0 +1,33 @@
+@import "~src/sass/variables";
+
+p {
+    font-size: $base-font-size * 0.8;
+    text-align: center;
+
+    @media #{$mq-medium} {
+        font-size: $base-font-size * 0.8;
+        text-align: left;
+    }
+
+    @media #{$mq-large} {
+        font-size: $base-font-size * 0.9;
+    }
+
+    @media #{$mq-xlarge} {
+        font-size: $base-font-size * 1.0;
+    }
+
+    @media #{$mq-xxlarge} {
+        font-size: $base-font-size * 1.2;
+    }
+}
+
+hr {
+    border: 1px solid $white;
+}
+
+.agenda-image-wrapper {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
