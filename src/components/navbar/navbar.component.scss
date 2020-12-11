@@ -25,7 +25,7 @@ li {
     padding: 0 0.5% 0;
     font-size: 0.9em;
 
-    @media #{$mq-large} {
+    @media #{$mq-medium} {
         font-size: 1em;
         padding: 0 2.5% 0;
     }

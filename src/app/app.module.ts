@@ -39,7 +39,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', onSameUrlNavigation: 'reload'})
   ],
   providers: [],
   bootstrap: [AppComponent]
