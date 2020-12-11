@@ -6,64 +6,13 @@
     </div>
     <div id="team-container" class="content-margin">
         <h2>TEAM</h2>
-        <div class="row mt-2">
+        <div class="row mt-5" *ngFor="let member of members">
             <div class="col-md-7 col-sm-12">
-                <h3>MICHEL</h3>
-                <p>Deze MANager. Da doluptat. Tendam fuga. Ut vit am, officidia nem dolor adisquat omnis volo quia
-                    conseque et, seque labore dolum voluptiis quas restrum nam, in nonsequi cus del
-                    ipsum et res inveni consequae voluptat.
-                    Bo. Cullut fugit mod</p>
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.description }}</p>
             </div>
-            <div class="col-md-5 col-sm-12">
-                <img src="assets/images/FARRM_Michel.jpg" class="img-fluid" />
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-7 col-sm-12">
-                <h3>JAN</h3>
-                <p>Deze audio man Ficaepra tustibus mo is mi, omnimus aut etur? One non num quidelestrum ad qui autat ab
-                    intur alite nobitatem aut re
-                    ea porehentium repero blandi con resed moluptae. Nequid unda quam, officitius ad undita simpostias
-                    is aut dolore,</p>
-            </div>
-            <div class="col-md-5 col-sm-12 order-md-first">
-                <img src="assets/images/FARRM_jan.jpg" class="img-fluid" />
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-7 col-sm-12">
-                <h3>ROBIN</h3>
-                <p>Deze visuele man. Da doluptat. Tendam fuga. Ut vit am, officidia nem dolor adisquat omnis volo quia
-                    conseque et, seque labore dolum voluptiis quas restrum nam, in nonsequi cus del
-                    ipsum et res inveni consequae voluptat.
-                    Bo. Cullut fugit mod</p>
-            </div>
-            <div class="col-md-5 col-sm-12">
-                <img src="assets/images/FARRM_Michel.jpg" class="img-fluid" />
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-7 col-sm-12">
-                <h3>JOREN</h3>
-                <p>Deze live man Ficaepra tustibus mo is mi, omnimus aut etur? One non num quidelestrum ad qui autat ab
-                    intur alite nobitatem aut re
-                    ea porehentium repero blandi con resed moluptae. Nequid unda quam, officitius ad undita simpostias
-                    is aut dolore,</p>
-            </div>
-            <div class="col-md-5 col-sm-12 order-md-first">
-                <img src="assets/images/FARRM_jan.jpg" class="img-fluid" />
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-7 col-sm-12">
-                <h3>VRIJWILLIGERS</h3>
-                <p>Deze gratis man. Da doluptat. Tendam fuga. Ut vit am, officidia nem dolor adisquat omnis volo quia
-                    conseque et, seque labore dolum voluptiis quas restrum nam, in nonsequi cus del
-                    ipsum et res inveni consequae voluptat.
-                    Bo. Cullut fugit mod</p>
-            </div>
-            <div class="col-md-5 col-sm-12">
-                <img src="assets/images/FARRM_Michel.jpg" class="img-fluid" />
+            <div class="col-md-5 col-sm-12" [ngClass]="{'order-md-first': member.left == true}">
+                <img [src]="member.imageUri" class="img-fluid" />
             </div>
         </div>
     </div>

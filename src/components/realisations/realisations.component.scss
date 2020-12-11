@@ -15,14 +15,17 @@ iframe {
     margin-bottom: 10vh;
 }
 
+#video-wrapper {
+}
+
 .video-container {
     iframe {
         width: 100%;
-        height: 30vh;
+        height: 20vh;
         display: block;
 
-        @media #{$mq-medium} {
-            height: auto;
+        @media #{$mq-large} {
+            height: 15vw;
         }
     }
 

@@ -1,10 +1,14 @@
 @import '~src/sass/variables';
 
 footer {
-    height: auto;
-    background: url("../../assets/images/footer_bg.png") no-repeat top;
+    background: url("../../assets/images/footer_bg.png") no-repeat;
+    background-position: 50% 10%;
     background-size: cover;
-    padding-top: 15vh;
+    padding-top: 20%;
+
+    @media #{$mq-medium} {
+        padding-top: 5%;
+    }
 }
 
 h2 {
@@ -18,15 +22,10 @@ p {
 #logo-container {
     padding-bottom: 2.5%;
 
-    #logo-center {
-        margin: 0 auto;
-        width: 75vw;
-    }
-
     img {
         max-height: 10vh;
-        max-width: 33.33%;
-        padding: 0 0 0 7.5vw;
+        max-width: 20%;
+        padding: 0 3.25vw 0;
     }
 }
 
@@ -34,8 +33,18 @@ p {
     width: 100%;
 
     img {
-        max-height: 10vh;
-        max-width: 10vh;
+        max-height: 20%;
+        max-width: 20%;
+
+        @media #{$mq-small} {
+            max-height: 33.33%;
+            max-width: 33.33%;    
+        }
+
+        @media #{$mq-medium} {
+            max-height: 20%;
+            max-width: 20%;        
+        }
     }
 }
 
